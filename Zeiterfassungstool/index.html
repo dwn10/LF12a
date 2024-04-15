@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeiterfassungstool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend id="fecha"></legend>
+        <h2 id="reloj"></h2>
+    </fieldset>
+    
+    <h1>Zeiterfassungstool</h1>
+
+    <form id="neues-projekt">
+        <label for="projektname">Projektname:</label>
+        <input type="text" id="projektname" name="projektname" required>
+
+        <label for="aufgabename">Aufgabe:</label>
+        <input type="text" id="aufgabename" name="aufgabename" required>
+
+        <label for="startzeit">Startzeit:</label>
+        <input type="datetime-local" id="startzeit" name="startzeit" required>
+
+        <label for="endzeit">Endzeit:</label>
+        <input type="datetime-local" id="endzeit" name="endzeit" required>
+
+        <button type="submit">Erstellen</button>
+    </form>
+
+    <table id="zeiterfassung">
+        <thead>
+            <tr>
+                <th>Projekt</th>
+                <th>Aufgabe</th>
+                <th>Startzeit</th>
+                <th>Endzeit</th>
+                <th>Dauer (Tage)</th>
+                <th>Dauer (Stunden)</th>
+                <th>Dauer (Minuten)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

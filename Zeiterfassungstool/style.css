@@ -1,0 +1,119 @@
+
+/* VARIABLES DEFINITION */
+
+:root{
+    --color-principal: #0ef;
+    --color-secondary: #ffffff;
+
+    --color-background: #081b29;
+    --color-transparent: transparent;
+    --color-new: #6ae90f;
+    --color-btn-1: #06bff7;
+    --color-btn-2: #8fcfe2;
+    --color-btn-5: #cc2900;
+    --color-subtitle: #312f2f;
+}
+
+/*--GENERAL STYLES--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-principal);
+    margin: 10px;
+}
+
+body {
+    font-family:Verdana;
+    background-color: var(--color-background);
+    color: var(--color-btn-2);
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 4px;
+}
+
+button {
+    width: 150px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 4px;
+    background-color: var(--color-new);
+    color: var(--color-background);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:active {
+    background-color: var(--color-btn-1);
+    box-shadow: 0 5px 5px rgb(114, 212, 215);
+}
+
+table {
+    width: 100%;
+    padding: 0 50px;
+}
+
+th,
+td {
+    border: 1px solid var(--color-secondary);
+    padding: 6px;
+    text-align: left;
+}
+
+#zeiterfassung thead th {
+    background-color: var(--color-principal);
+    color: var(--color-subtitle);
+}
+
+#neues-projekt,
+#zeiterfassung {
+    padding: 50px;
+    margin-bottom: -70px;
+}
+
+/*--DATUM - UHR--*/
+legend {
+    font-size: 1.1rem;
+    padding: 30px 3px;
+}
+
+fieldset {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#reloj {
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
