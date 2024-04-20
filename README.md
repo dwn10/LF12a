@@ -1,3 +1,16 @@
+# Kundenspezifische Anwendungsentwicklung durchführen - LT12a - Projekt
+Verwendete Technologien:
+
+```javascript
+const Projects = {
+  	code: ["HTML", "CSS", "Javascript"],
+	technologies: {
+	devTool: ["VS-Code"]
+	}
+}
+
+## Projektbeschreibung
+- Erstellen eines Zeiterfassungstools
 
 ## Zeiterfassungs-App
 
@@ -33,3 +46,31 @@ Ein neuer:
 
 Der Code enthält lediglich die Grundfunktionalität einer Zeiterfassungsanwendung.
 Bei Bedarf können Erweiterungen wie Benutzerauthentifizierung, Datenpersistenz und Berichterstellung hinzugefügt werden.
+
+##
+## Projekt-Screenshots
+
+<a href="./images/1_web.JPG"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
+
+
+## Credits:
+
+**Author:**
+
+```bash
+  Darwin Paz
+```
+
+**Unter der Leitung von:**
+
+```bash
+  Norbert Maier
+```
+
+```http
+  Abgabetermin:
+```
+
+| Stadt:      | Datum:            | Bis:          |
+| :---------- | :---------------- | :------------ |
+| `Darmstadt` | `Fr - 19.04.2024` | **10:30 Uhr** |
