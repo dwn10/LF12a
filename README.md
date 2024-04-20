@@ -15,41 +15,55 @@ const Projects = {
 
 ## Zeiterfassungs-App
 
-Der vorgestellte Code implementiert eine Zeiterfassungsanwendung in JavaScript, die es Benutzern ermöglicht, Projekte und damit verbundene Aufgaben sowie die Start- und Endzeiten der Arbeit an diesen Projekten aufzuzeichnen. Die gesammelten Daten werden dann in einer Tabelle angezeigt.
+Ermöglicht es Benutzern, Projekte und damit verbundene Aufgaben sowie Projektstart- und -endzeiten in Tagen, Stunden und Minuten aufzuzeichnen. Die gesammelten Daten werden dann in einer Tabelle angezeigt.
 
 ## Funktionalität:
 
 ## HTML-Elemente:
 
-neuesProjektForm: Formular zur Eingabe neuer Projekte und Aufgaben.
-zeiterfassungTabelle: Tabelle zur Anzeige der erfassten Zeiteinträge.
-showDate: Element zur Anzeige des aktuellen Datums.
-showClock: Element zur Anzeige der aktuellen Uhrzeit.
-Veranstaltungsmanagement:
+- `neuesProjektForm:` Formular zur Eingabe neuer Projekte und Aufgaben.
+- `zeiterfassungTabelle:` Tabelle zur Anzeige der erfassten Zeiteinträge.
+- `showDate:` Element zur Anzeige des aktuellen Datums.
+- `showClock:` Element zur Anzeige der aktuellen Uhrzeit.
+  
+## Veranstaltungsmanagement:
 
-„submit“ Ein Ereignis wird auf dem newProjektFormform-Formular ausgelöst, wenn der Benutzer es absendet.
-Um die eingegebenen Daten zu verarbeiten und in der Tabelle anzuzeigen, wird die Funktion addZeiteintrag aufgerufen.
-Datenverarbeitung:
+- `submit` Ein Ereignis wird auf dem `newProjektForm` Formular ausgelöst, wenn der Benutzer es absendet.
+- Um die eingegebenen Daten zu verarbeiten und in der Tabelle anzuzeigen, wird die Funktion `addZeiteintrag` aufgerufen.
 
-Die Funktion addZeiteintrag erstellt einen neuen Datensatz (zeiteintrag) mit den eingegebenen Projekt- und Aufgabendetails, Start- und Endzeiten sowie der berechneten Arbeitsdauer (Tage, Stunden und Minuten).
-Es wird eine neue Zeile zeiterfassungTabelleen erstellt.
-Für jede Eigenschaft des zeiteintragobject wird eine neue Zelle in der Zeile erstellt und mit dem entsprechenden Wert gefüllt.
-Datums- und Uhrzeitanzeige:
+## Datenverarbeitung:
 
-Das aktuelle Datum und die aktuelle Uhrzeit werden im Element showDate und showClock mithilfe der Methode toLocaleString angezeigt.
-Die Zeit wird jede Sekunde durch die Funktion setInterval aktualisiert.
-Weitere Details:
+- Die Funktion `addZeiteintrag` erstellt einen neuen Datensatz `(zeiteintrag)` mit den eingegebenen Projekt- und Aufgabendetails, Start- und Endzeiten sowie der berechneten Arbeitsdauer (Tage, Stunden und Minuten).
+- Es wird eine neue Zeile `zeiterfassungTabelleen` erstellt.
+- Für jede Eigenschaft des `zeiteintragobject` wird eine neue Zelle in der Zeile erstellt und mit dem entsprechenden Wert gefüllt.
 
-Der Code verwendet DOM-Manipulation, um mit HTML-Elementen zu interagieren.
-Die Date-Klasse wird zum Bearbeiten von Datums- und Uhrzeitwerten verwendet.
-Die toLocaleString-Methode wird verwendet, um Datums- und Uhrzeitwerte in ein für Menschen lesbares Format zu formatieren.
-Ein neuer:
+## Datums- und Uhrzeitanzeige:
 
-Der Code enthält lediglich die Grundfunktionalität einer Zeiterfassungsanwendung.
-Bei Bedarf können Erweiterungen wie Benutzerauthentifizierung, Datenpersistenz und Berichterstellung hinzugefügt werden.
+- Das aktuelle Datum und die aktuelle Uhrzeit werden im Element `showDate` und `showClock` mithilfe der Methode `toLocaleString` angezeigt.
+- Die Zeit wird jede Sekunde durch die Funktion `setInterval` aktualisiert.
+
+## Weitere Details:
+
+- Der Code verwendet DOM-Manipulation, um mit HTML-Elementen zu interagieren.
+- Die `Date-Klasse` wird zum Bearbeiten von Datums- und Uhrzeitwerten verwendet.
+- Die `toLocaleString-Methode` wird verwendet, um Datums- und Uhrzeitwerte in ein für Menschen lesbares Format zu formatieren.
+  
+## Dynamische Datums- und Uhrzeitanzeige:
+
+- Das Datum wird im Format „aktueller Tag, Datum Monat Jahr“ angezeigt.
+- Die Uhrzeit wird im lokalen Zeitzonenformat angezeigt.
+
+## CSS
+
+In diesem Abschnitt werden Variablen definiert, die das Farbschema steuern. Zu diesen Variablen gehören:
+
+- `Hauptfarbe:` Hiermit wird die Hauptfarbe festgelegt, in diesem Fall Hellblau `(#0ef)`.
+- `Sekundärfarbe:` Dies legt die Sekundärfarbe fest, die hier Weiß ist `(#ffffff)`.
+- `Hintergrund:` Dies legt die Hintergrundfarbe fest, die hier dunkelblau ist `(#081b29)`.
+- Für verschiedene Elemente wie Schaltflächen, Text usw. werden weitere Farbvariablen definiert.
 
 ##
-## Projekt-Screenshots
+`>> IMG + VIDEO <<`
 
 <a href="https://github.com/dwn10/LF12a/blob/main/Zeiterfassungstool/readme-img/zeiterfassung.gif"><img src="https://github.com/dwn10/LF12a/blob/main/Zeiterfassungstool/readme-img/z-1.JPG?raw=true" style="height: 80%; width:80%;"/></a>
 
@@ -65,7 +79,7 @@ Bei Bedarf können Erweiterungen wie Benutzerauthentifizierung, Datenpersistenz 
 **Unter der Leitung von:**
 
 ```bash
-  Norbert Maier
+  Edin Hadzic
 ```
 
 ```http
@@ -74,4 +88,4 @@ Bei Bedarf können Erweiterungen wie Benutzerauthentifizierung, Datenpersistenz 
 
 | Stadt:      | Datum:            | Bis:          |
 | :---------- | :---------------- | :------------ |
-| `Darmstadt` | `Fr - 19.04.2024` | **10:30 Uhr** |
+| `Darmstadt` | `Fr - 19.04.2024` | **14:30 Uhr** |
