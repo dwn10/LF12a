@@ -51,7 +51,7 @@ Bei Bedarf können Erweiterungen wie Benutzerauthentifizierung, Datenpersistenz 
 ##
 ## Projekt-Screenshots
 
-<a href="./images/1_web.JPG"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="https://github.com/dwn10/LF12a/blob/main/Zeiterfassungstool/readme-img/zeiterfassung.gif"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
 
 
 ## Credits:
