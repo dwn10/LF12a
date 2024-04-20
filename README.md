@@ -8,6 +8,7 @@ const Projects = {
 	devTool: ["VS-Code"]
 	}
 }
+```
 
 ## Projektbeschreibung
 - Erstellen eines Zeiterfassungstools
